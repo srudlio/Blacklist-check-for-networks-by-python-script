@@ -1,5 +1,5 @@
 There was a project in my workplace to create a specific python script which use a database file (spam_organisations.csv) includes Spam Organisations url addresses for check and their status codes. 
-Script make a check for every ip address from added networks: dig +short reverseip.spamorganisationname.com - if return status code match with discribed in database file IP address will be match as listed, if the status code does not match with codes in database files status will be OK, if there is no returning status code status again is OK, if there is a problem with check -- status code will be Unexpected error.
+Script make a check for every ip address from added networks: dig +short reverseip.spamorganisationname.com - if return status code match with discribed in database file IP address will be match as listed, if the status code does not match with codes in database file status will be OK, if there is no returning status code status again is OK, if there is a problem with check -- status code will be Unexpected error.
 The script use multi workers/threads at same time.
 
 Requirements to use script:
