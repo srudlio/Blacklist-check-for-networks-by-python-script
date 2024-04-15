@@ -44,7 +44,7 @@ def process_network(network, spam_organisations):
 
 
 def main():
-    networks = ["85.187.45.0/24", "151.237.23.0/24"]  # Add more networks as needed
+    networks = ["1.0.0.0/24", "2.0.0.0/24"]  # Add more networks as needed
     output_files = ["blacklisted_ips_network1.csv", "blacklisted_ips_network2.csv"]  # Adjust output file names as needed
 
     spam_organisations = {}
@@ -93,7 +93,7 @@ def send_email(to_email, cc_email, attachment_files):
             )
             msg.attach(part)
 
-    smtp_server = smtplib.SMTP('*****', 587)  # Replace with other SMTP server details
+    smtp_server = smtplib.SMTP('example.com', 587)  # Replace with other SMTP server details
     smtp_server.starttls()
     smtp_server.login(from_email, password)
     recipients = [to_email] + [cc_email]
